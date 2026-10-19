@@ -1,0 +1,64 @@
+:root {
+  --wf-primary: #8b1e3f;      /* deep maroon */
+  --wf-primary-dark: #6a1631;
+  --wf-gold: #c9a24d;
+  --wf-cream: #fff8f0;
+  --wf-dark: #2b1a20;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--wf-dark);
+}
+
+h1, h2, h3, h4, h5, .brand {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom buttons and colours (Bootstrap doesn't know our brand colours) */
+.btn-wf { background: var(--wf-primary); color: #fff; border: 2px solid var(--wf-primary); }
+.btn-wf:hover { background: var(--wf-primary-dark); border-color: var(--wf-primary-dark); color: #fff; }
+.btn-outline-wf { border: 2px solid var(--wf-primary); color: var(--wf-primary); }
+.btn-outline-wf:hover { background: var(--wf-primary); color: #fff; }
+.btn-gold { background: var(--wf-gold); color: #fff; border: 2px solid var(--wf-gold); }
+.btn-gold:hover { background: #b08c3e; border-color: #b08c3e; color: #fff; }
+
+.text-wf { color: var(--wf-primary); }
+.text-gold { color: var(--wf-gold); }
+.bg-wf { background: var(--wf-primary); }
+.bg-cream { background: var(--wf-cream); }
+.badge-gold { background: rgba(201, 162, 77, 0.2); color: var(--wf-gold); border: 1px solid var(--wf-gold); }
+
+.section { padding: 80px 0; }
+.section-title { font-weight: 700; margin-bottom: 12px; }
+.section-sub { color: #6c757d; max-width: 600px; margin: 0 auto 48px; }
+
+/* Hero */
+.hero {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #8b1e3f 0%, #2b1a20 100%);
+}
+
+/* Feature cards */
+.feature-card { border: none; border-radius: 16px; transition: transform .25s, box-shadow .25s; }
+.feature-card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(139, 30, 63, .15); }
+.icon-circle {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--wf-cream); color: var(--wf-primary); font-size: 1.5rem;
+}
+
+/* How it works */
+.step-number {
+  width: 52px; height: 52px; border-radius: 50%;
+  background: var(--wf-primary); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 1.2rem; margin: 0 auto 16px;
+}
+
+.footer-link { color: #cbb; text-decoration: none; }
+.footer-link:hover { color: var(--wf-gold); }
+
+section[id] {
+  scroll-margin-top: 80px;
+}
