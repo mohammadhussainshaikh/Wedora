@@ -5,20 +5,24 @@
   line-height: 1.1;
   font-weight: 500;
 }
-.services-accent { color: #b0565f; }
 
+.services-accent {
+  color: #C6A66B;
+}
 .services-explore {
-  color: #b0565f;
+  color: #9A793F;
   text-decoration: none;
   font-size: 0.9rem;
-  border-bottom: 1px solid #b0565f;
+  border-bottom: 1px solid #C6A66B;
   padding-bottom: 6px;
   white-space: nowrap;
 }
 
+
+
 .service-card {
-  background: #fffdfb;
-  border: 1px solid #eee5df;
+  background: #FFFFFF;
+  border: 1px solid #E8E0D2;
   border-radius: 14px;
   padding: 28px;
   height: 100%;
@@ -29,10 +33,20 @@
 }
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 28px rgba(176, 86, 95, 0.12);
+  box-shadow: 0 10px 28px rgba(198, 166, 107, 0.18);
 }
-.service-card h3 { font-size: 1.35rem; font-weight: 500; margin-bottom: 10px; }
-.service-card p  { color: #7a6f6a; font-size: 0.9rem; }
+
+.service-card h3 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #292724;
+}
+.service-card p {
+  color: #746F65;
+  font-size: 0.9rem;
+}
+
 
 .service-icon {
   width: 54px;
@@ -42,22 +56,38 @@
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
-  margin-bottom: 24px;
 }
-.tone-rose     { background: #f5e4e4; color: #b0565f; }
-.tone-sand     { background: #f3ebdf; color: #9a7b4f; }
-.tone-lavender { background: #ece8f3; color: #7b5f94; }
-.tone-sage     { background: #e6eee7; color: #5f7f66; }
+.tone-rose {
+  background: #F8F4EC;
+  color: #9A793F;
+}
 
+.tone-sand {
+  background: #F3EBDD;
+  color: #9A793F;
+}
+
+.tone-lavender {
+  background: #F1EEE7;
+  color: #74664D;
+}
+
+.tone-sage {
+  background: #E9EDE5;
+  color: #56664D;
+}
 .service-link {
   margin-top: auto;
-  color: #b0565f;
+  color: #9A793F;
   font-weight: 600;
   font-size: 0.85rem;
   text-decoration: none;
 }
 .service-link i { display: inline-block; transition: transform 0.2s; }
-.service-link:hover i { transform: translate(3px, -3px); }
+.services-explore:hover,
+.service-link:hover {
+  color: #292724;
+}
 
 
 html {

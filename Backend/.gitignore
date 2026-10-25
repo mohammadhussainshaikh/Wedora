@@ -3,3 +3,8 @@ dist/
 .env
 .env.*
 !.env.example
+.env
+env/
+.venv/
+__pycache__/
+*.py[cod]

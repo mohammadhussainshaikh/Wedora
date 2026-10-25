@@ -1,0 +1,127 @@
+
+/* Main registration page */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f8f4ec;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Registration form card */
+.register-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e7dcc8;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(41, 39, 36, 0.1);
+}
+
+/* Heading */
+.register-card h1 {
+  margin: 0 0 10px;
+  color: #292724;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+/* Subtitle */
+.register-subtitle {
+  margin-bottom: 30px;
+  color: #777168;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Form fields */
+.register-field {
+  margin-bottom: 18px;
+}
+
+.register-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #292724;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.register-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #ded7cb;
+  border-radius: 8px;
+  outline: none;
+  background: #fffdf9;
+  color: #292724;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Input focus */
+.register-field input:focus {
+  border-color: #c6a66b;
+  box-shadow: 0 0 0 3px rgba(198, 166, 107, 0.16);
+}
+
+.register-field input::placeholder {
+  color: #a29b91;
+}
+
+/* Create account button */
+.register-button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #292724;
+  border-radius: 8px;
+  background: #292724;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.register-button:hover {
+  background: #45413b;
+  transform: translateY(-1px);
+}
+
+/* Login link */
+.register-footer {
+  margin: 24px 0 0;
+  color: #777168;
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-footer a {
+  color: #a8874a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  color: #806331;
+  text-decoration: underline;
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 28px 22px;
+  }
+
+  .register-card h1 {
+    font-size: 29px;
+  }
+}
